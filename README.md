@@ -121,17 +121,7 @@ MLP_DIM = 512
 DROP_RATE = 0.1
 ```
 
-## Performance do Modelo
-
-Resultados esperados após 10 épocas:
-
-- **CUDA (GPU NVIDIA)**: ~5-10 minutos
-- **MPS (Apple Silicon)**: ~10-15 minutos
-- **CPU**: ~30-60 minutos
-
-Test Accuracy esperada: ~65-70%
-
-## Detalhes de Implementação
+## Detalhes Técnicos
 
 ### Patch Embedding
 
