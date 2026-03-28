@@ -123,23 +123,6 @@ DROP_RATE = 0.1
 
 ## Detalhes Técnicos
 
-### Patch Embedding
-
-As imagens são divididas em patches não sobrepostos de 4x4:
-
-```
-Entrada: (batch_size, 3, 32, 32)
-Patches: (batch_size, 64, 256)
-```
-
-### Multi-Head Self-Attention
-
-Atenção scaled dot-product com 8 cabeças paralelas:
-
-```
-Attention(Q, K, V) = softmax(QK^T / sqrt(d_k)) * V
-```
-
 ### Transformer Encoder
 
 6 camadas de transformer encoder, cada uma contendo:
